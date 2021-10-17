@@ -94,7 +94,8 @@
 				var br = document.createElement('br');
 				
 				//attach them to content. Attach br tag, then label, then radio button
-				document.getElementById('content').insertBefore(br);
+				var foo = document.getElementById('content')
+				foo.appendChild(br)
 				document.getElementById('content').insertBefore(label, br);
 				document.getElementById('content').insertBefore(radioButton, label);
 			}
